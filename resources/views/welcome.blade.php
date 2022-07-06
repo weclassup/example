@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php $HW = ''; ?>
+<?php //$HW = ''; ?>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -41,7 +41,7 @@
     {{ $HW }}
     <form action="{{ route('test') }}" method="get">
         <div>
-            <input type="text" name="HW" VALUE="@if($HW == '')@else$HW @endif">
+            <input type="text" name="HW" VALUE="@if($HW == '')@else{{$HW}} @endif">
         </div>
         <input type="submit" value="送出">
     </form>

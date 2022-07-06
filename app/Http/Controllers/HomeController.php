@@ -8,10 +8,10 @@ use Illuminate\View\View;
 class HomeController extends Controller
 {
 
-    public function show(){
-        echo $_GET['HW'];
+    public function show(Request $request){
+//        echo $_GET['HW'];
         $con = '0101';
-        return View('welcome', ['HW'=> $_GET['HW']]) ;
+        return View('welcome', ['HW'=> $request->input('HW')]) ;
     }
 }
 

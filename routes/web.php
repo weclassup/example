@@ -14,7 +14,7 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome',['HW'=>'']);
 //    return view('welcome', ['test'=> 'Hello' , 'test1' => 'World']);
 //    return 'Hello World';
 });
