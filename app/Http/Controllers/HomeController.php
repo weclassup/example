@@ -10,7 +10,7 @@ class HomeController extends Controller
 
     public function show(){
         echo $_GET['HW'];
-        $con = '01';
+        $con = '0101';
         return View('welcome', ['HW'=> $_GET['HW']]) ;
     }
 }
